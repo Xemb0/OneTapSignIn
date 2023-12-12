@@ -4,6 +4,9 @@ plugins {
     id 'kotlin-kapt'
     id 'com.google.gms.google-services'
 }
+sourceSets {
+    main.java.srcDirs += 'src/main/java'
+}
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(8)
